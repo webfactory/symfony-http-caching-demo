@@ -32,7 +32,7 @@ class CacheDemoController extends AbstractController
 
     /**
      * @Route("/weekday")
-     * @Cache(maxage=10, public=true)
+     * @Cache(maxage=60, public=true)
      */
     public function showWeekday(Request $request): Response
     {
@@ -47,5 +47,13 @@ class CacheDemoController extends AbstractController
         $this->render('weekday.html.twig', [], $response);
 
         return $response;
+    }
+
+    /**
+     * @Route("/")
+     */
+    public function showDashboard()
+    {
+        return $this->render('dashboard.html.twig');
     }
 }
