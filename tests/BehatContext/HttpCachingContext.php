@@ -2,7 +2,6 @@
 
 namespace App\Tests\BehatContext;
 
-use Behat\Behat\Tester\Exception\PendingException;
 use Behat\MinkExtension\Context\RawMinkContext;
 
 class HttpCachingContext extends RawMinkContext
@@ -21,5 +20,29 @@ class HttpCachingContext extends RawMinkContext
     public function theResponseShouldBe($directive)
     {
         $this->assertSession()->responseHeaderMatches('Cache-Control', "_\b$directive\b_");
+    }
+
+    /**
+     * @Given /^the HttpCache is enabled$/
+     */
+    public function theHttpCacheIsEnabled()
+    {
+        $this->getSession()->setCookie('SYMFONY_CACHE', 1);
+    }
+
+    /**
+     * @Then /^the response is served from cache$/
+     */
+    public function theResponseIsServedFromCache()
+    {
+        $this->assertSession()->responseHeaderMatches('Age', '_\d+_');
+    }
+
+    /**
+     * @Given /^the HttpCache trace contains \'([^\']*)\'$/
+     */
+    public function theHttpCacheTraceContains($arg1)
+    {
+        $this->assertSession()->responseHeaderContains('X-Symfony-Cache', $arg1);
     }
 }
