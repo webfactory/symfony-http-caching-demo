@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Hello {{ app.request.get('name') }}</h1>
+    {{ render_esi(controller('App\\Controller\\CacheDemoController::showWeekday')) }}
+    {{ render_esi(controller('App\\Controller\\CacheDemoController::showTime')) }}
+{% endblock %}

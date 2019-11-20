@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Response rendered at {{ date() | date('H:i:s') }}. <br/>
+    <h1>Response generated at {{ date() | date('H:i:s') }}<br/>
     <script>
-        document.write("Page displayed at " + (new Date()).toLocaleTimeString() + ".");
+        document.write("Page displayed at " + (new Date()).toLocaleTimeString());
     </script></h1>
 {% endblock %}
