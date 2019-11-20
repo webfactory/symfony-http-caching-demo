@@ -36,6 +36,7 @@ class CacheDemoController extends AbstractController
         $response = new Response();
         $response->setLastModified(new \DateTime('today midnight'));
         $response->setEtag('some-etag');
+        $response->headers->addCacheControlDirective('no-cache');
 
         if ($response->isNotModified($request)) {
             return $response;
