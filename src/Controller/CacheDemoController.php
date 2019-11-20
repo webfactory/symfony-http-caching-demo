@@ -26,4 +26,16 @@ class CacheDemoController extends AbstractController
 
         return $response;
     }
+
+    /**
+     * @Route("/weekday")
+     */
+    public function showWeekday(): Response
+    {
+        $response = $this->render('weekday.html.twig');
+        $response->setLastModified(new \DateTime('today midnight'));
+        $response->setEtag('some-etag');
+
+        return $response;
+    }
 }
