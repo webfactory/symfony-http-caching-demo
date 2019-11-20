@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -30,11 +31,17 @@ class CacheDemoController extends AbstractController
     /**
      * @Route("/weekday")
      */
-    public function showWeekday(): Response
+    public function showWeekday(Request $request): Response
     {
-        $response = $this->render('weekday.html.twig');
+        $response = new Response();
         $response->setLastModified(new \DateTime('today midnight'));
         $response->setEtag('some-etag');
+
+        if ($response->isNotModified($request)) {
+            return $response;
+        }
+
+        $this->render('weekday.html.twig', [], $response);
 
         return $response;
     }
