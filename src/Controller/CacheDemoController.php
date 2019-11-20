@@ -25,6 +25,7 @@ class CacheDemoController extends AbstractController
     {
         $response = $this->render('time.html.twig');
         $response->setMaxAge(10);
+        $response->setPublic();
 
         return $response;
     }
