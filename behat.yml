@@ -9,3 +9,4 @@ default:
         default:
             contexts:
                 - Behat\MinkExtension\Context\MinkContext
+                - App\Tests\BehatContext\HttpCachingContext
