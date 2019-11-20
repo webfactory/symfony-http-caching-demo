@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="277px" preserveAspectRatio="none" style="width:928px;height:277px;" version="1.1" viewBox="0 0 928 277" width="928px" zoomAndPan="magnify"><defs><filter height="300%" id="f1w1adm4d0ub0e" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b3ad01ddeee7a8023078597cce53191f]
+entity D1--><rect fill="#F8F8F8" filter="url(#f1w1adm4d0ub0e)" height="62.5938" style="stroke: #383838; stroke-width: 1.5;" width="340" x="557.5" y="8"/><rect fill="#F8F8F8" height="10" style="stroke: #383838; stroke-width: 1.5;" width="15" x="877.5" y="13"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="875.5" y="15"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="875.5" y="19"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="300" x="572.5" y="40.9951">/?name=... Response with ESI placeholders</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="138" x="572.5" y="57.292">private, no-cache</text><!--MD5=[a36976c252c313df2dc3293dc523a6ce]
+entity D2--><rect fill="#F8F8F8" filter="url(#f1w1adm4d0ub0e)" height="62.5938" style="stroke: #383838; stroke-width: 1.5;" width="350" x="552.5" y="106"/><rect fill="#F8F8F8" height="10" style="stroke: #383838; stroke-width: 1.5;" width="15" x="882.5" y="111"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="880.5" y="113"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="880.5" y="117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="310" x="567.5" y="138.9951">CacheDemoController::showTime() fragment</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="156" x="567.5" y="155.292">public, max-age=10</text><!--MD5=[2b5544800db797a8f88460b77a577bae]
+entity D3--><rect fill="#F8F8F8" filter="url(#f1w1adm4d0ub0e)" height="62.5938" style="stroke: #383838; stroke-width: 1.5;" width="379" x="538" y="204"/><rect fill="#F8F8F8" height="10" style="stroke: #383838; stroke-width: 1.5;" width="15" x="897" y="209"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="895" y="211"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="895" y="215"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="339" x="553" y="236.9951">CacheDemoController::showWeekday() fragment</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="156" x="553" y="253.292">public, max-age=60</text><!--MD5=[b558f4cf94350cd038fc582d0a377440]
+entity HttpCache--><polygon fill="#F8F8F8" filter="url(#f1w1adm4d0ub0e)" points="364,124.5,374,114.5,477,114.5,477,150.7969,467,160.7969,364,160.7969,364,124.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="467" x2="476" y1="124.5" y2="115.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="364" x2="467" y1="124.5" y2="124.5"/><line style="stroke: #000000; stroke-width: 1.5;" x1="467" x2="467" y1="124.5" y2="160.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="73" x="379" y="147.4951">HttpCache</text><!--MD5=[ca4fca654d8994778fee589c6b3ae58e]
+entity R--><rect fill="#F8F8F8" filter="url(#f1w1adm4d0ub0e)" height="62.5938" style="stroke: #383838; stroke-width: 1.5;" width="248" x="6" y="106"/><rect fill="#F8F8F8" height="10" style="stroke: #383838; stroke-width: 1.5;" width="15" x="234" y="111"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="232" y="113"/><rect fill="#F8F8F8" height="2" style="stroke: #383838; stroke-width: 1.5;" width="4" x="232" y="117"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="21" y="138.9951">Final Response</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="208" x="21" y="155.292">best-possible combination</text><!--MD5=[8594a34146f1550c674bf1bebd2ad451]
+link HttpCache to D1--><path d="M471.928,114.423 C492.208,105.636 515.968,95.954 538,88.5 C556.337,82.296 575.9,76.417 595.223,71.026 " fill="none" id="HttpCache-D1" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[bb090b51141cc3bf2248c08523cf6d63]
+link HttpCache to D2--><path d="M477.087,137.5 C498.822,137.5 525.043,137.5 552.205,137.5 " fill="none" id="HttpCache-D2" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[4045ee35b163e4983c139db866a2e033]
+link HttpCache to D3--><path d="M471.928,160.577 C492.208,169.3643 515.968,179.0463 538,186.5 C556.337,192.7037 575.9,198.5833 595.223,203.9735 " fill="none" id="HttpCache-D3" style="stroke: #383838; stroke-width: 1.0;"/><!--MD5=[7d84804a32cc9ffd54ffb27f2bc56254]
+reverse link R to HttpCache--><path d="M259.562,137.5 C296.065,137.5 333.925,137.5 363.641,137.5 " fill="none" id="R&lt;-HttpCache" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="254.187,137.5,263.187,141.5,259.187,137.5,263.187,133.5,254.187,137.5" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="48" x="285" y="133.5669">creates</text><!--MD5=[8c572f14db2bbaebd10b255be2b285f9]
+@startuml
+left to right direction
+skinparam monochrome true
+
+component D1 [
+    /?name=... Response with ESI placeholders
+    <b>private, no-cache</b>
+]
+
+
+component D2 [
+    CacheDemoController::showTime() fragment
+    <b>public, max-age=10</b>
+]
+
+
+component D3 [
+    CacheDemoController::showWeekday() fragment
+    <b>public, max-age=60</b>
+]
+
+node HttpCache 
+
+HttpCache - - D1
+HttpCache - - D2
+HttpCache - - D3
+
+component R [
+    Final Response
+    <b>best-possible combination</b>
+]
+
+R <- - HttpCache : creates
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 10:24:54 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,45 @@
+@startuml
+
+left to right direction
+skinparam monochrome true
+
+component D1 [
+    /?name=... Response with ESI placeholders
+    <b>private, no-cache</b>
+]
+
+
+component D2 [
+    CacheDemoController::showTime() fragment
+    <b>public, max-age=10</b>
+]
+
+
+component D3 [
+    CacheDemoController::showWeekday() fragment
+    <b>public, max-age=60</b>
+]
+
+node HttpCache
+
+HttpCache -- D1
+HttpCache -- D2
+HttpCache -- D3
+
+component R [
+    Final Response
+    <b>best-possible combination</b>
+]
+
+R <-- HttpCache : creates
+
+@enduml
+
+@startuml
+    left to right direction
+    skinparam monochrome true
+
+    node "User-Agent 1"
+
+
+@enduml
