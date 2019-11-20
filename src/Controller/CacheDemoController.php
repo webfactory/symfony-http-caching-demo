@@ -15,4 +15,15 @@ class CacheDemoController extends AbstractController
     {
         return $this->render('request_headers.html.twig');
     }
+
+    /**
+     * @Route("/time")
+     */
+    public function showTime(): Response
+    {
+        $response = $this->render('time.html.twig');
+        $response->setMaxAge(10);
+
+        return $response;
+    }
 }
