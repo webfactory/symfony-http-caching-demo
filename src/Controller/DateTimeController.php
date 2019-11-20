@@ -13,6 +13,9 @@ class DateTimeController extends AbstractController
      */
     public function showTime(): Response
     {
-        return $this->render('index.html.twig');
+        $response = $this->render('index.html.twig');
+        $response->setMaxAge(5);
+
+        return $response;
     }
 }
