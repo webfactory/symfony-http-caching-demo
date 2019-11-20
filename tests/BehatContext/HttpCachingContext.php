@@ -45,4 +45,25 @@ class HttpCachingContext extends RawMinkContext
     {
         $this->assertSession()->responseHeaderContains('X-Symfony-Cache', $arg1);
     }
+
+    /**
+     * @Given /^revalidate the response$/
+     */
+    public function revalidateTheResponse()
+    {
+        $session = $this->getSession();
+        $client = $session->getDriver()->getClient();
+        $request = $client->getHistory()->current();
+        $serverParameters = $request->getServer();
+
+        if ($lastModified = $session->getResponseHeader('Last-Modified')) {
+            $serverParameters['HTTP_IF_MODIFIED_SINCE'] = $lastModified;
+        }
+
+        if ($eTag = $session->getResponseHeader('Etag')) {
+            $serverParameters['HTTP_IF_NONE_MATCH'] = $eTag;
+        }
+
+        $client->request($request->getMethod(), $request->getUri(), $request->getParameters(), $request->getFiles(), $serverParameters, $request->getContent());
+    }
 }
