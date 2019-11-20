@@ -4,3 +4,4 @@ Feature: DateTimeController caching
         When I am on "/"
         Then the response status code should be 200
         And the expiration time should be 5 seconds
+        And the response should be public

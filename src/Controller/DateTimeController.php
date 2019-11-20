@@ -11,7 +11,7 @@ class DateTimeController extends AbstractController
 {
     /**
      * @Route("/")
-     * @Cache(maxage=5)
+     * @Cache(maxage=5, public=true)
      */
     public function showTime(): Response
     {
