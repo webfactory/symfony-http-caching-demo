@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -30,13 +31,13 @@ class CacheDemoController extends AbstractController
 
     /**
      * @Route("/weekday")
+     * @Cache(maxage=10)
      */
     public function showWeekday(Request $request): Response
     {
         $response = new Response();
         $response->setLastModified(new \DateTime('today midnight'));
         $response->setEtag('some-etag');
-        $response->headers->addCacheControlDirective('no-cache');
 
         if ($response->isNotModified($request)) {
             return $response;
