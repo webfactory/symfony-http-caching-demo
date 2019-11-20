@@ -7,7 +7,8 @@
     </script></h1>
     <h2>Request headers:</h2>
     <table style="font-family: monospace">
-        {% for name in ['Cache-Control', 'Pragma', 'If-None-Match', 'If-Modified-Since'] if app.request.headers.has(name) %}
+        {# Works around https://github.com/symfony/symfony/pull/34385 #}
+        {% for name in ['Cache-Control', 'Pragma', 'If-None-Match', 'If-Modified-Since'] if app.request.headers.has(name) and app.request.headers.get(name) %}
             <tr>
                 <td>{{ name }}</td>
                 <td>{{ app.request.headers.get(name) }}</td>
