@@ -28,6 +28,10 @@
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {
+        "behat/behat": "^3.5",
+        "behat/mink": "^1.7@dev",
+        "behat/mink-extension": "^2.3",
+        "behat/mink-goutte-driver": "^1.2",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.0",
         "symfony/profiler-pack": "*",
