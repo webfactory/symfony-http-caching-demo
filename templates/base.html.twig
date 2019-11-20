@@ -2,8 +2,20 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}HTTP Caching Sandbox{% endblock %}</title>
+        {% block stylesheets %}
+            <style type="text/css">
+                body {
+                    background-color: black;
+                    color: white;
+                    font-family: BentonSans, sans-serif;
+                }
+
+                a {
+                    color: #5eb5e0;
+                }
+            </style>
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}

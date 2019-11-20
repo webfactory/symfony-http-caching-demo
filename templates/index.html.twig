@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Response rendered at {{ date() | date('H:i:s') }}. <br/>
+    <script>
+        document.write("Page displayed at " + (new Date()).toLocaleTimeString() + ".");
+    </script></h1>
+    <h2>Request headers:</h2>
+    <table style="font-family: monospace">
+        {% for name in ['Cache-Control', 'Pragma', 'If-None-Match', 'If-Modified-Since'] if app.request.headers.has(name) %}
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ app.request.headers.get(name) }}</td>
+            </tr>
+        {% else %}
+            <tr><td>No caching-related headers were set.</td></tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="/">Link to this page</a></p>
+{% endblock %}
