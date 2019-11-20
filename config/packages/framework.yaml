@@ -14,3 +14,7 @@ framework:
     #fragments: true
     php_errors:
         log: true
+
+    assets:
+        version: "%env(DEPLOYMENT_TS)%"
+        version_format: "assets-version-%%2$s/%%1$s"

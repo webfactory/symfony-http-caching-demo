@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Roboto;
+}
+
+a {
+    color: #5eb5e0;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('roboto-v18-latin-regular.woff2') format('woff2')
+}

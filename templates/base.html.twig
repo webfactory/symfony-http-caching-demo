@@ -3,18 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}HTTP Caching Sandbox{% endblock %}</title>
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
         {% block stylesheets %}
-            <style type="text/css">
-                body {
-                    background-color: black;
-                    color: white;
-                    font-family: BentonSans, sans-serif;
-                }
-
-                a {
-                    color: #5eb5e0;
-                }
-            </style>
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}"></link>
         {% endblock %}
     </head>
     <body>
