@@ -32,7 +32,7 @@ class CacheDemoController extends AbstractController
 
     /**
      * @Route("/weekday")
-     * @Cache(maxage=10)
+     * @Cache(maxage=10, public=true)
      */
     public function showWeekday(Request $request): Response
     {
