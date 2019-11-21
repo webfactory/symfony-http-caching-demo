@@ -3,8 +3,12 @@ theme: Franziska, 8
 [.header: alignment(left), Courier]
 # GET /HTTP-Caching-101
 ### Host: SymfonyCon.Amsterdam
-### Date: Thu, 21 Nov 2019 15:30:00 GMT
-### Speaker: Matthias Pigulla \<mp@webfactory.de>
+### Date: Thu, 21 Nov 2019 14:30:00 GMT
+
+```php
+```
+Matthias Pigulla \<mp@webfactory.de>
+webfactory GmbH, Bonn – Germany
 
 ---
 
@@ -72,28 +76,31 @@ Host: cal.culat.or
 
 --- 
 
-## (Here be live coding)
+```php
+```
+
+# (Here be live coding)
 
 ---
 
-# Think twice before `public` 🤕
+```php
+```
 
-* Cookies, Login Sessions, ...
-* No Security Component or stuff when serving from cache
+# Be careful with `public` 🤕
 
 ---
+
+```php
+```
 
 # `Vary` Header 🏳️‍🌈 
 
-* Puts additional headers into Cache key 
-
 ---
 
-# Responses with mixed `max-age` content?  
+```php
+```
 
----
-
-# Responses with mixed `private` and `public` content?
+# [fit] Edge Side Includes (ESI)
 
 ---
 
@@ -102,6 +109,17 @@ Host: cal.culat.or
      
 ---
 
+```php
+```
+# github.com/webfactory/
+# symfony-http-caching-demo
+
+---
+
+```php
+
+```
+# [fit] Questions
 
 ---
 
@@ -109,8 +127,14 @@ Host: cal.culat.or
 
 ```
 # [fit] 🍻 🙌🏻 🚀
+
 ---
 
 # Matthias Pigulla (`mpdude`)
 ## webfactory GmbH, Bonn – Germany
 ## mp@webfactory.de // @mpdude_de
+
+```php
+```
+
+# github.com/webfactory/symfony-http-caching-demo
