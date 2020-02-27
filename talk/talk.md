@@ -1,59 +1,59 @@
 theme: Franziska, 8
 
 [.header: alignment(left), Courier]
-# GET /HTTP-Caching-101
-### Host: SymfonyCon.Amsterdam
-### Date: Thu, 21 Nov 2019 14:30:00 GMT
+## GET /HTTP-Caching-mit-Symfony
+### Host: SymfonyUserGroup.koeln
+### Date: Thu, 26 Feb 2020 18:05:00 GMT
 
 ```php
 ```
 Matthias Pigulla \<mp@webfactory.de>
-webfactory GmbH, Bonn – Germany
+webfactory GmbH, Bonn
 
 ---
 
-# [fit] 34 • 17 = ? 
+# [fit] 16 • 37 = ? 
 
 ---
 
-# If I'd speak HTTP… 🤓
+# Wenn ich HTTP sprechen könnte… 🤓
 
 ```
-GET /multiply?a=34&b=17 HTTP/1.1
-Host: cal.culat.or
+GET /multipliziere?a=16&b=37 HTTP/1.1
+Host: tas.chenrech.ner
 ```
 
 ```
--> https://cal.culat.or/multiply?a=34&b=17
+-> https://tas.chenrech.ner/multipliziere?a=16&b=37 HTTP/1.1
 ```
 
 --- 
 
-# Cache Key
+# Lookup-Schlüssel 
 
 ```
 [ 
     "GET",
-    "https://cal.culat.or/multiply?a=34&b=17",
-    "..." // ignore for now   
+    "https://tas.chenrech.ner/multipliziere?a=16&b=37",
+    "..." // erstmal egal   
 ]
 ```
 
 ---
 
-# Cacheable HTTP Methods
+# Zwischenspeicherbare HTTP-Verben
 
-(RFC 7231 Section 4.2.3)
+(RFC 7231 Abschnitt 4.2.3)
 
 * GET
 * HEAD
-* POST (_must_ write through 🤕)
+* POST (_muss_ aber ins Backend durchschreiben 🤕)
 
 ---
 
-# Status codes cacheable *by default*
+## Standardmäßig zwischenspeicherbare Status-Codes
 
-(RFC 7231 Section 6.1)
+(RFC 7231 Abschnitt 6.1)
   
 * 200 OK
 * 301 Moved permanently
@@ -68,7 +68,7 @@ Host: cal.culat.or
 
 ---
 
-# Further reading
+# Details
 
 * RFC 7234 – HTTP/1.1: Caching
 * RFC 7231 – HTTP/1.1: Semantics and Content
@@ -79,14 +79,14 @@ Host: cal.culat.or
 ```php
 ```
 
-# (Here be live coding)
+# (Und nun: ein bisschen Live-Coding)
 
 ---
 
 ```php
 ```
 
-# Be careful with `public` 🤕
+# Vorsicht bei `public` 🤕
 
 ---
 
@@ -119,14 +119,14 @@ Host: cal.culat.or
 ```php
 
 ```
-# [fit] Questions
+# [fit] Fragen
 
 ---
 
 ```php
 
 ```
-# [fit] 🍻 🙌🏻 🚀
+# [fit] 🙏🏻 🍻 🚀
 
 ---
 
