@@ -24,7 +24,7 @@ Host: tas.chenrech.ner
 ```
 
 ```
--> https://tas.chenrech.ner/multipliziere?a=16&b=37 HTTP/1.1
+-> https://tas.chenrech.ner/multipliziere?a=16&b=37 
 ```
 
 --- 
